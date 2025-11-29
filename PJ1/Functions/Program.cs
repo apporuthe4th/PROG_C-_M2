@@ -1,22 +1,52 @@
-﻿namespace Functions;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Functions;
 
 class Program
 {
-    static void Main(string[] args)
+
+
+   internal static void Main(string[] args)
+    {
+        
+        Program program = new Program();
+  
+        program.what(args);
+        program.arrayrandomizer(args);
+        int bean = 10;
+
+        string hii = "wsggggg";
+
+    }
+    public void SayHello(string[]hii) 
+{
+    Console.WriteLine(hii);
+}
+    internal void arrayrandomizer(string[] args)
     {
         Program program = new Program();
-                
-        program.what(args);
-        program.V1(args);
-        program.V2(args);
-        program.V3(args);
-        program.V4(args);
-        program.V5(args);
+        Random rnd = new Random();
+        int RandomINT = rnd.Next(1, 8);
+        string[] V_List = new string[7];
+        {
+            program.V1(args);
+            program.V2(args);
+            program.V3(args);
+            program.V4(args);
+            program.V5(args);
+            program.V6(args);
+            program.V7(args);
+        }
+        string randoquestion = V_List[RandomINT];
+        Console.WriteLine(randoquestion);
+
     }
     internal void what(string[] args)
     {
+
         Console.WriteLine("func test");
     }
+
 
     internal void V1(string[] args)
     {
@@ -61,6 +91,7 @@ class Program
         string anw = Console.ReadLine();
         return anw;
     }
+
 }
 
    
