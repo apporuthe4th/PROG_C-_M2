@@ -3,5 +3,6 @@
 internal class Dag
 {
     internal DateTime datum;
-    internal LesUur[] lesuren;
+
+    internal LesUur[] LesUren;
 }

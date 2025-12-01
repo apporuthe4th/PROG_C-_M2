@@ -8,5 +8,5 @@ internal class Student
     internal RijLeraar leraar;
     internal TheorieTest theorieTest;
     internal RijTest rijTest;  
-
+    internal Dag dag;
 }
