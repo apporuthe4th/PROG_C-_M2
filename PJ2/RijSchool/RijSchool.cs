@@ -45,28 +45,29 @@ class RijSchool
             gehaald = true,
             datum = DateTime.Now
         };
-
-        Student student = new Student
-        {
-            naam = "seal",
-            leeftijd = 15,
-            lesPakket = lesPakket,
-            leraar = rijleraar,
-            theorieTest = TheorieTest,
-            rijTest = rijTest
-        };
-
         LesUur[] lesUrenArray = new LesUur[3];
-        lesUrenArray[0] = new LesUur() { tijd = 16, auto = auto1, rijLeraar = rijleraar, student = student };
-        lesUrenArray[1] = new LesUur() { tijd = 14, auto = auto1, rijLeraar = rijleraar, student = student };
-        lesUrenArray[2] = new LesUur() { tijd = 15, auto = auto2, rijLeraar = rijleraar, student = student };
+        lesUrenArray[0] = new LesUur() {tijd = 16};
+        lesUrenArray[1] = new LesUur() {tijd = 14};
+        lesUrenArray[2] = new LesUur() {tijd = 15};
 
         Dag dag = new Dag
         {
             datum = DateTime.Now,
             LesUren = lesUrenArray,
         };
-        student.dag = dag;
+        Student student = new Student
+        {
+            naam = "fibsh",
+            leeftijd = 15,
+            lesPakket = lesPakket,
+            leraar = rijleraar,
+            theorieTest = TheorieTest,
+            rijTest = rijTest,
+            dag = dag
+        };
+
+
+        
 
         Console.WriteLine($"student {student.naam}; leeftijd {student.leeftijd}, heeft {student.dag.LesUren.Length} lesuren gepland.");
     }
