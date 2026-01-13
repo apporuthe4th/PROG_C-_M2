@@ -4,6 +4,8 @@ class Program
 
 {
     Quiz quiz = new Quiz(10); //01 constructors
+    Quiz.VoegVraagToeOpIndex(0, quizVraag);
+    quiz.VoegVraagToeOpIndex(0, quizVraag);
 
 internal void PLACEHOLDER(string[] args)
     {
