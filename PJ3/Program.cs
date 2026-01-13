@@ -3,6 +3,7 @@
 class Program
 
 {
+    Quiz quiz = new Quiz(10); //01 constructors
 
 internal void PLACEHOLDER(string[] args)
     {

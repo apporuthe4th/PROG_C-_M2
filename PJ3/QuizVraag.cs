@@ -2,6 +2,11 @@ namespace PJ3;
 
 internal class QuizVraag
 {
+    internal QuizVraag()
+    { 
+    
+    
+    }
     internal string vraag;
     internal string antwoord;
 
