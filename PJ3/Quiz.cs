@@ -4,13 +4,14 @@ class Quiz
 {
     internal QuizVraag[] vragen;
     internal QuizVraagAntwoord[] ingevuldeAntwoorden;
+
     internal Quiz()
     {
         vragen = new QuizVraag[aantalVragen];
     }
-    vragen[index] = vraag;
+    
 
-     void VoegVraagToeOpIndex(int index, QuizVraag vraag) { 
+    internal void VoegVraagToeOpIndex(int index, QuizVraag vraag) { 
         vragen[index] = vraag;
     }
 

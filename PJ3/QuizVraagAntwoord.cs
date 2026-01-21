@@ -1,13 +1,10 @@
-using PJ3;
+namespace PJ3;
 
-class QuizVraagAntwoord
+class QuizVraagAntwoord()
 {
-    internal QuizVraagAntwoord(QuizVraag vraag)
-    {
-        vraag = vraag;
-        goed = false;
-
-    }
     internal QuizVraag vraag;
     internal bool goed;
+
 }
+
+

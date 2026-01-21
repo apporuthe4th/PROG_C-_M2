@@ -3,20 +3,18 @@
 class Program
 
 {
-    Quiz quiz = new Quiz(10); //01 constructors
-    Quiz.VoegVraagToeOpIndex(0, quizVraag);
-    quiz.VoegVraagToeOpIndex(0, quizVraag);
 
-internal void PLACEHOLDER(string[] args)
+internal void run(string[] args)
     {
      QuizVraag quizVraag = new QuizVraag("haaq", "aaa");
+     Quiz.VoegVraagToeOpIndex(2, "fish");
 
     }
 
 static void Main(string[] args)
     {
         Program program = new Program();
-        program.run();
+        program.run(args);
     }
 
 }
